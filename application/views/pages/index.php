@@ -1,83 +1,69 @@
 
-    <link href="../assets/plugins/horizontal-timeline/css/horizontal-timeline.css" rel="stylesheet">
-        <link href="css/pages/timeline-vertical-horizontal.css" rel="stylesheet">
-            <link href="css/style.css" rel="stylesheet">
-              <link href="css/colors/megna-dark.css" id="theme" rel="stylesheet">
-<!-- Container fluid  -->
-<!-- ============================================================== -->
-<div class="container-fluid ">
 
 
-    <!-- ============================================================== -->
-    <!-- Activity widget find scss into widget folder-->
-    <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
 
-    <div class="row">
+                <!-- ============================================================== -->
+                <!-- End Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Connected Devices List</h4>
+                                <h6 class="card-subtitle">List of Devices Connected with you</h6>
+                                <div class="row m-t-40">
+                                    <!-- Column -->
+                                    <div class="col-md-6 col-lg-3 col-xlg-3">
+                                        <div class="card">
+                                            <div class="box bg-info text-center">
+                                                <h1 class="font-light text-white">2,064</h1>
+                                                <h6 class="text-white">Total Tickets</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Column -->
+                                    <div class="col-md-6 col-lg-3 col-xlg-3">
+                                        <div class="card">
+                                            <div class="box bg-primary text-center">
+                                                <h1 class="font-light text-white">1,738</h1>
+                                                <h6 class="text-white">Responded</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Column -->
+                                    <div class="col-md-6 col-lg-3 col-xlg-3">
+                                        <div class="card">
+                                            <div class="box bg-success text-center">
+                                                <h1 class="font-light text-white">1100</h1>
+                                                <h6 class="text-white">Resolve</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Column -->
+                                    <div class="col-md-6 col-lg-3 col-xlg-3">
+                                        <div class="card">
+                                            <div class="box bg-dark text-center ">
 
-        <!--Little Profile widget-->
-        <div class="col-lg-12">
-            <div class="card">
-                <div class="card-body little-profile text-center">
-                    <div class="pro-img m-t-20">
-                      <?php echo form_open_multipart('pages/imgpro') ?>
+                                                <h2 class="font-light text-white"><i class="fa fa-plus-circle m-r-5"></i>Create New Device</h2>
+                                                <h6 class="text-white">Pending</h6>
 
-                            <img id="blah"  src="../assets/images/users/<?php if($this->session->userdata('user_img')) { echo $this->session->userdata('user_img'); }else {
-                              echo'profile.png';
-                            } ?>" alt='user' id ="#up">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Column -->
+                                </div>
 
+                            </div>
+                        </div>
                     </div>
-                    <input type='file' name="image" class="label label-success label-rounded"  onchange="readURL(this);"  required />
-                    <h3 class="m-b-0"><?=$this->session->userdata('user_name')?> </h3>
-                    <h6 class="text-muted"><?=$this->session->userdata('user_email')?></h6>
-                    <h6 class="text-red" > <?php echo $error; ?></h6>
-                    <button class="label label-success label-rounded" >Save Picture  </button>
-
-
                 </div>
-                <div class="text-center bg-light">
-                    <div class="row">
-                        <div class="col-6  p-20 b-r">
-                            <h4 class="m-b-0 font-medium">1099</h4><small>Score</small></div>
-                        <div class="col-6  p-20">
-                            <h4 class="m-b-0 font-medium">603</h4><small>World Rank</small></div>
-                    </div>
-
-                </div>
-
-
-
-
-
-                <div class="card-body text-center">
-                    <a href="javascript:void(0)" class="m-t-10 m-b-20 waves-effect waves-dark btn btn-primary btn-md btn-rounded">Continue Practice</a>
-                </div>
-
-            </div>
-
-
-        </div>
-        <!--Little Profile widget-->
-    </div>
-
-<!-- ============================================================== -->
-<!-- Style switcher -->
-<!-- ============================================================== -->
-
-
-
-    <script type="text/javascript">
-    function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-
-                reader.onload = function (e) {
-                    $('#blah')
-                        .attr('src', e.target.result)
-                        .width(150)
-                        .height(150);
-                };
-
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
-        </script>
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->

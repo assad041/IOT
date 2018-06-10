@@ -126,10 +126,10 @@
                                         </div>
                                     </li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="index"><i class="ti-user"></i> My Profile</a></li>
+                                    <li><a href="profile"><i class="ti-user"></i> My Profile</a></li>
 
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="index"><i class="ti-settings"></i> Account Setting</a></li>
+                                    <li><a href="profile"><i class="ti-settings"></i> Account Setting</a></li>
                                     <li role="separator" class="divider"></li>
                                     <li><a href="../post/logout"><i class="fa fa-power-off"></i> Logout</a></li>
                                 </ul>
@@ -172,97 +172,7 @@
                               <li><a href="quiz?no=2">Quiz</a></li>
                             </ul>
                         </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 3</span></a>
-                            <ul aria-expanded="false" class="collapse">
-                              <li><a href="ifelse">if-else</a></li>
-                              <li><a href="nestedifelse">Nested if-else</a></li>
-                              <li><a href="switch">Switch Statement</a></li>
-                              <li><a href="conditionaloperator">Conditional Operator</a></li>
-                              <li><a href="quiz?no=3">Quiz</a></li>
-                            </ul>
-                        </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 4 </span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="loop">Loop</a></li>
-                                <li><a href="nestedloop">Nested Loop</a></li>
-                                <li><a href="eof">End of File (EOF)</a></li>
-                                <li><a href="quiz?no=4">Quiz</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-small-cap">STRUCTURED C PROGRAMMING</li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 1 </span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="array">Arrays </a></li>
-                                <li><a href="marray">Multidimensional Arrays</a></li>
-                                <li><a href="quiz?no=5">Quiz</a></li>
-                            </ul>
-                        </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 2</span></a>
-                            <ul aria-expanded="false" class="collapse">
-                               <li><a href="string">String</a></li>
-                               <li><a href="stringo">String Operation</a></li>
-                               <li><a href="quiz?no=6">Quiz</a></li>
-                            </ul>
-                        </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 3</span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="function">Fuction</a></li>
-                                <li><a href="rfunction">Recurtion Function</a></li>
-                                <li><a href="quiz?no=7">Quiz</a></li>
-                            </ul>
-                        </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 4 </span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="structureinc">Structure</a></li>
-                                <li><a href="astructure">Array of Structures </a></li>
-                                <li><a href="#">Structures within Structures</a></li>
-                                <li><a href="quiz?no=8">Quiz</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-small-cap">DATA STRUCTURES &amp; ALGORITHMS</li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 1 </span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="#">Algorithms Basics</a></li>
-                                <li><a href="#">Asymptotic Analysis</a></li>
-                                <li><a href="#">Greedy Algorithms</a></li>
-                                <li><a href="#">Divide and Conquer</a></li>
-                                <li><a href="#">Dynamic Programming</a></li>
-                                <li><a href="quiz?no=9">Quiz</a></li>
-                            </ul>
-                        </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 2 </span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="#">Data Structures Basics</a></li>
-                                <li><a href="#">Array Data Structure</a></li>
-                                <li><a href="#">Linked List Basic</a></li>
-                                <li><a href="quiz?no=10">Quiz</a></li>
-                            </ul>
-                        </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 3</span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="#">Stack</a></li>
-                                <li><a href="#">Queue</a></li>
-                                <li><a href="quiz?no=11">Quiz</a></li>
-                            </ul>
-                        </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 4</span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="#">Linear Search</a></li>
-                                <li><a href="#">Binary Search</a></li>
-                                <li><a href="quiz?no=12">Quiz</a></li>
 
-                            </ul>
-                        </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 5 </span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="#">Bubble Sort</a></li>
-                                <li><a href="#">Merge Sort</a></li>
-                                <li><a href="#">Quick Sort</a></li>
-                                <li><a href="quiz?no=13">Quiz</a></li>
-
-
-                            </ul>
-                        </li>
 
 
 
