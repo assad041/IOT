@@ -11,7 +11,7 @@
 <!-- ============================================================== -->
 <!-- footer -->
 <!-- ============================================================== -->
-<footer class="footer"> © 2018 Learn C Programming by Assaduzzaman Noor </footer>
+<footer class="footer"> © 2018 Smart Cloud IOT System by <a href="http://www.assaduzzaman.me" target="_blank">Assaduzzaman Noor</a> </footer>
 <!-- ============================================================== -->
 <!-- End footer -->
 <!-- ============================================================== -->

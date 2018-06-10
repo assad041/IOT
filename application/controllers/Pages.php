@@ -63,12 +63,12 @@
         $data['quiz']= $this->Post_model->get_quiz($qn);
 
       }
-      else if($page=='submitquiz'){
-        $qn=$this->input->post('quizno');
-        $data['quizno']= $qn;
-        $page='addquiz';
-        $this->Post_model->set_addquiz();
-        $data['quiz']= $this->Post_model->get_quiz($qn);
+      else if($page=='adddevicedata'){
+        $name=$this->input->post('name');
+        $key=$this->input->post('key');
+        $page='index';
+        $this->Post_model->set_adddevicedata($name,$key);
+
       }
       else if($page=='deletequiz'){
         $qn=$this->input->post('quizno');

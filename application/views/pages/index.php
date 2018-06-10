@@ -12,6 +12,14 @@
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
+
+                <div class="row page-titles">
+
+                    <div class="">
+                        <a class="right-side-toggle waves-effect waves-light btn-inverse btn btn-circle btn-sm pull-right m-l-10"><i class="ti-settings text-white"></i></a>
+                    </div>
+                </div>
+
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
@@ -49,12 +57,15 @@
                                     <!-- Column -->
                                     <div class="col-md-6 col-lg-3 col-xlg-3">
                                         <div class="card">
-                                            <div class="box bg-dark text-center ">
 
+                                            <input type="hidden" name="quizno" value="1">
+                                            <a class="box bg-dark text-center " href="adddevice">
                                                 <h2 class="font-light text-white"><i class="fa fa-plus-circle m-r-5"></i>Create New Device</h2>
-                                                <h6 class="text-white">Pending</h6>
+                                                <h6 class="text-white">Config</h6>
+                                            </a>
 
-                                            </div>
+
+
                                         </div>
                                     </div>
                                     <!-- Column -->

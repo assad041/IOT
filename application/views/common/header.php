@@ -56,7 +56,7 @@
     <div class="preloader">
         <div class="loader">
             <div class="loader__figure"></div>
-            <p class="loader__label">Learn C Programming</p>
+            <p class="loader__label">Smart Cloud IOT System</p>
         </div>
     </div>
     <!-- ============================================================== -->
@@ -152,7 +152,7 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
 
-                        <li class="nav-small-cap">INTRODUCTION TO C</li>
+                        <li class="nav-small-cap">IOT Home Automation</li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 1 </span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="welcome">Welcome </a></li>

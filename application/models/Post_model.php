@@ -17,7 +17,7 @@
       return $query->row_array();
     }
 
-    public function get_quiz($qn){
+    public function get_device($qn){
 
       $query = $this->db->get_where('quiz', array('quiz_no' => $qn));
       return $query->result_array();
@@ -88,7 +88,7 @@
         'score_quiz_no' => $qn,
         'score_point' => $score,
         'score_update' => date("Y-m-d H:i:s"),
-        
+
        );
        $query = $this->db->get_where('score', array('user_id' =>$this->session->userdata('user_id'),'score_quiz_no' =>$qn));
 
@@ -110,17 +110,13 @@
 
     }
 
-    public function set_addquiz(){
+    public function set_adddevicedata($name,$key){
       $data = array(
-        'quiz_q' => $this->input->post('question'),
-        'quiz_op1' => $this->input->post('op1'),
-        'quiz_op2' => $this->input->post('op2'),
-        'quiz_op3' => $this->input->post('op3'),
-        'quiz_op4' => $this->input->post('op4'),
-        'quiz_ans' => $this->input->post('ans'),
-        'quiz_no' => $this->input->post('quizno'),
+        'user_id' =>$this->session->userdata('user_id'),
+        'device_name' => $name,
+        'device_key' => $key,
        );
-      return $this ->db->insert('quiz',$data);
+      return $this ->db->insert('device',$data);
     }
 
     public function log_verify(){
