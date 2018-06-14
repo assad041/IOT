@@ -12,7 +12,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
-    <title>Learn C Programming</title>
+    <title>Smart Cloud IOT System</title>
 
     <!-- Bootstrap Core CSS -->
 
@@ -72,7 +72,7 @@
                 <!-- Logo -->
                 <!-- ============================================================== -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="index">
                         <!-- Logo icon --><b>
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                             <!-- Dark Logo icon -->
@@ -81,11 +81,7 @@
                             <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
                         </b>
                         <!--End Logo icon -->
-                        <!-- Logo text --><span>
-                         <!-- dark Logo text -->
-                         <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
-                         <!-- Light Logo text -->
-                         <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span> </a>
+                         </a>
                 </div>
                 <!-- ============================================================== -->
                 <!-- End Logo -->
@@ -150,33 +146,8 @@
             <div class="scroll-sidebar">
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
-                    <ul id="sidebarnav">
 
-                        <li class="nav-small-cap">IOT Home Automation</li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 1 </span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="welcome">Welcome </a></li>
-                                <li><a href="history">History and Evolution</a></li>
-                                <li><a href="howworks">How It Works</a></li>
-                                <li><a href="tools">Tools and Tips</a></li>
-                                <li><a href="quiz?no=1">Quiz</a></li>
-                            </ul>
-                        </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 2</span></a>
-                            <ul aria-expanded="false" class="collapse">
-                              <li><a href="structure">C Program Structure</a></li>
-                              <li><a href="syntax">Basic Syntax &amp; Data Types</a></li>
-                              <li><a href="variables">Variables &amp; Constants</a></li>
-                              <li><a href="operators">Operators</a></li>
-                              <li><a href="casting">Type Casting</a></li>
-                              <li><a href="quiz?no=2">Quiz</a></li>
-                            </ul>
-                        </li>
-
-
-
-
-                    </ul>
+                  
                 </nav>
                 <!-- End Sidebar navigation -->
             </div>

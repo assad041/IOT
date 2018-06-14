@@ -24,29 +24,31 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Connected Devices List</h4>
-                                <h6 class="card-subtitle">List of Devices Connected with you</h6>
+                                <h4 class="card-title">Swiches List</h4>
                                 <div class="row m-t-40">
                                     <!-- Column -->
                                   <?php
 
-                                    $device=$this->Post_model->get_device();
+                                    $key=$this->input->get('key');
+                                    $swichs=$this->Post_model->get_swich_board($key);
                                     $c=0;
-                                    foreach ($device as $devices) {
+                                    while ($c<8) {
                                       $c++;
+                                      $fildename="swich_board_f".$c."name";
+                                      $fildvalue="swich_board_f".$c."value";
                                   ?>
-                                    <a class="col-md-6 col-lg-3 col-xlg-3" href="swich_board?key=<?=$devices["device_key"]?>">
+                                    <a class="col-md-6 col-lg-3 col-xlg-3"   href="update_swich_board?key=<?=$key?>&status=<?=$swichs[$fildvalue]?>&field=<?=$fildvalue?>">
                                         <div class="card">
                                           <?php
                                            if($c%3==1)
                                            {
                                            ?>
-                                            <div class="box bg-info text-center">
+                                            <div class="box bg-info text-center" style="height:80px; ">
                                               <?php
                                             }
                                             else if ($c%3==2) {
                                               ?>
-                                              <div class="box bg-primary text-center">
+                                              <div class="box bg-primary text-center" style="height:80px">
                                               <?php
 
                                             }
@@ -54,13 +56,20 @@
 
                                               ?>
 
-                                              <div class="box bg-success text-center">
+                                              <div class="box bg-success text-center" style="height:80px">
 
                                               <?php
                                             }
                                                ?>
-                                                <h2 class="font-light text-white"><?=$devices["device_name"]?></h2>
-                                                <h6 class="text-white">Active</h6>
+                                                <h2 class="font-light text-white"><?php echo $swichs[$fildename];?></h2>
+                                                <h6 class="text-white"><?php if($swichs[$fildvalue]) {
+                                                  echo "On";
+                                                }
+                                                else {
+                                                  echo "Off";
+                                                }
+
+                                                 ?></h6>
                                             </div>
                                         </div>
                                     </a>
@@ -68,20 +77,7 @@
                                      }
                                      ?>
 
-                                    <div class="col-md-6 col-lg-3 col-xlg-3">
-                                        <div class="card">
 
-                                            <input type="hidden" name="quizno" value="1">
-                                            <a class="box bg-dark text-center " href="adddevice">
-                                                <h2 class="font-light text-white"><i class="fa fa-plus-circle m-r-5"></i>Create New Device</h2>
-                                                <h6 class="text-white">Activation</h6>
-                                            </a>
-
-
-
-                                        </div>
-                                    </div>
-                                    <!-- Column -->
                                 </div>
 
                             </div>

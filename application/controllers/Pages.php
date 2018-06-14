@@ -70,12 +70,28 @@
         $this->Post_model->set_adddevicedata($name,$key);
 
       }
+      else if($page=='update_swich_board'){
+        $field=$this->input->get('field');
+        $key=$this->input->get('key');
+        $status=$this->input->get('status');
+        $page='swich_board';
+        $this->Post_model->update_swich_board($field,$key,$status);
+
+      }
       else if($page=='deletequiz'){
         $qn=$this->input->post('quizno');
         $data['quizno']= $qn;
         $page='addquiz';
         $this->Post_model->delete_quiz($this->input->post('quizid'));
         $data['quiz']= $this->Post_model->get_quiz($qn);
+      }
+      else if($page=='api'){
+        $this->load->view('pages/'.$page, $data);
+        return;
+      }
+      else if($page=='apies'){
+        $this->load->view('pages/'.$page, $data);
+        return;
       }
       else if($page=='quizscore'){
         $qn=$this->input->post('quizno');

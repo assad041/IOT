@@ -17,10 +17,15 @@
       return $query->row_array();
     }
 
-    public function get_device($qn){
+    public function get_device(){
 
-      $query = $this->db->get_where('quiz', array('quiz_no' => $qn));
+      $query = $this->db->get_where('device', array('user_id' => $this->session->userdata('user_id')));
       return $query->result_array();
+    }
+
+    public function get_swich_board($key){
+      $query = $this->db->get_where('swich_board', array('swich_board_key' => $key));
+      return $query->row_array();
     }
 
     public function get_20quiz($qn){
@@ -128,6 +133,18 @@
        $v=array('user_img' => $value);
        $this->db->where('user_id',$this->session->userdata('user_id'));
        $query =$this->db->update('user',$v);
+      return $query;
+    }
+    public function update_swich_board($field,$key,$status){
+      if($status==1){
+        $status=0;
+      }
+      else {
+        $status=1;
+      }
+       $v=array($field => $status);
+       $this->db->where('swich_board_key',$key);
+       $query =$this->db->update('swich_board',$v);
       return $query;
     }
 
